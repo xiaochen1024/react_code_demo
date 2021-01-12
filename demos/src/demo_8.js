@@ -5,10 +5,10 @@ export default class App extends React.Component {
     count: 0,
   };
   click = () => {
-    // setTimeout(() => {
-    this.setState({ count: this.state.count + 1 });
-    // this.setState({ count: this.state.count + 1 });
-    // });
+    setTimeout(() => {
+      this.setState({ count: this.state.count + 1 });
+      this.setState({ count: this.state.count + 1 });
+    });
   };
   render() {
     console.log("render");

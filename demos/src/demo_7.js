@@ -13,7 +13,7 @@ export default function App() {
     setTimeout(() => updateCount(1), 2000);
     setTimeout(() => button.click(), 2040);
   }, []);
-
+  console.log('count', count)
   return (
     <div>
       <button ref={buttonRef} onClick={onClick}>

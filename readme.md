@@ -1,4 +1,4 @@
-### react：react17源码，含build的文件
+### react_build：react17 build源码
 
 * cd react_build/node_modules/react
 * npm link

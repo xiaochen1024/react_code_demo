@@ -3,9 +3,9 @@ export default function App() {
   const [count, setCount] = useState(0);
   return (
     <div className="App">
-      <h1 onClick={() => setCount(() => count + 1)}>
-        <p title={count}>{count}</p> and save to reload.
-      </h1>
+      <p onClick={() => setCount(() => count + 1)}>
+        <h1 title={count}>{count}</h1> and save to reload.
+      </p>
     </div>
   );
 }

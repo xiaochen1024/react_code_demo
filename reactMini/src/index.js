@@ -125,6 +125,11 @@ function createElement(type, props, ...children) {//创建element
     commitWork(fiber.sibling)
   }
   
+  let nextUnitOfWork = null
+  let currentRoot = null
+  let wipRoot = null
+  let deletions = null
+
   function render(element, container) {//渲染开始的入口
     wipRoot = {
       dom: container,
@@ -136,11 +141,6 @@ function createElement(type, props, ...children) {//创建element
     deletions = []
     nextUnitOfWork = wipRoot
   }
-  
-  let nextUnitOfWork = null
-  let currentRoot = null
-  let wipRoot = null
-  let deletions = null
   
   function workLoop(deadline) {//调度函数
     let shouldYield = false
